@@ -1,6 +1,6 @@
-# A Static Google Page
+# Google Home Page
 
-I created a google home page using react.
+I created a google home page using react.js.
 
 ## COMPONENTS
 
