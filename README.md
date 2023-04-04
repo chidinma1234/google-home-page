@@ -20,3 +20,7 @@ I was able to create 3 major components from the google home page and these comp
 - Languages component.
 
 3. Footer component: This is found at the end of the page.
+
+## **Demo**
+
+Here is a link to a live demo:https://clone-google-home-page-chidinma1234.netlify.app/
