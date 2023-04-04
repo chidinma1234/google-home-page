@@ -17,7 +17,7 @@ export default function SearchBar() {
       <form className="form_input">
         <input
           type="text"
-          placeholder="Search google or type a url"
+          // placeholder="Search google or type a url"
           className="search_input"
           onChange={onChangeHandler}
           onKeyDown={handleKeyPress}
