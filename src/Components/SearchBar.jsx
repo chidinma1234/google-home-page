@@ -2,24 +2,22 @@ import React, { useState } from 'react';
 
 import SearchIcon from '../assets/search-icon.png';
 import Microphone from '../assets/microphone.png';
-export default function SearchBar() {
+function SearchBar() {
   const [value, setValue] = useState('');
 
-  const [input, updatedInput] = useState('');
+  const [input, setInput] = useState('');
   const onChangeHandler = (event) => {
     setValue(event.target.value);
   };
   const handleKeyPress = (event) => {
-    if (event.key === 'Enter') updatedInput(value);
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      setInput(value);
+    }
   };
   return (
     <div className="input">
-      <form
-        className="form_input"
-        onClick={(e) => {
-          e.preventDefault();
-        }}
-      >
+      <form className="form_input">
         <input
           type="text"
           // placeholder="Search google or type a url"
@@ -42,4 +40,4 @@ export default function SearchBar() {
   );
 }
 
-// export default SearchBar;
+export default SearchBar;
