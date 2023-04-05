@@ -14,7 +14,12 @@ export default function SearchBar() {
   };
   return (
     <div className="input">
-      <form className="form_input">
+      <form
+        className="form_input"
+        onClick={(e) => {
+          e.preventDefault();
+        }}
+      >
         <input
           type="text"
           // placeholder="Search google or type a url"
