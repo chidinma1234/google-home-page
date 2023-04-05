@@ -7,9 +7,11 @@ export default function SearchBar() {
 
   const [input, updatedInput] = useState('');
   const onChangeHandler = (event) => {
+    event.preventDefault();
     setValue(event.target.value);
   };
   const handleKeyPress = (event) => {
+    // event.preventDefault()
     if (event.key === 'Enter') updatedInput(value);
   };
   return (
