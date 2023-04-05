@@ -1,8 +1,8 @@
-# Google Home Page
+# **Google Home Page**
 
 I created a google home page using react.js.
 
-## COMPONENTS
+## **COMPONENTS**
 
 I was able to create 3 major components from the google home page and these components have their sub component:
 
@@ -17,9 +17,12 @@ I was able to create 3 major components from the google home page and these comp
 - GoogleLogo component.
 - SearchBar component
 - Buttons component
-- Languages component.
+- Languages component: This component has a sub-component which is Language component
 
-3. Footer component: This is found at the end of the page.
+3. Footer component: This is found at the end of the page.This component is also broken down into its own sub-component.They include:
+
+- Location component
+- FooterLinks component
 
 ## **Demo**
 

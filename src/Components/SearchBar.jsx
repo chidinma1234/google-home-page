@@ -6,12 +6,12 @@ function SearchBar() {
   const [value, setValue] = useState('');
 
   const [input, setInput] = useState('');
-  const onChangeHandler = (event) => {
-    setValue(event.target.value);
+  const onChangeHandler = (e) => {
+    setValue(e.target.value);
   };
-  const handleKeyPress = (event) => {
-    if (event.key === 'Enter') {
-      event.preventDefault();
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
       setInput(value);
     }
   };
