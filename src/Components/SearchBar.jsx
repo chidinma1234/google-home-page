@@ -11,20 +11,17 @@ export default function SearchBar() {
   };
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') updatedInput(value);
-    event.preventDefault();
   };
   return (
     <div className="input">
-      <form className="form_input">
-        <input
-          type="text"
-          // placeholder="Search google or type a url"
-          className="search_input"
-          onChange={onChangeHandler}
-          onKeyDown={handleKeyPress}
-          value={value}
-        />
-      </form>
+      <input
+        type="text"
+        // placeholder="Search google or type a url"
+        className="search_input"
+        onChange={onChangeHandler}
+        onKeyDown={handleKeyPress}
+        value={value}
+      />
       <div className="value">
         <p>{input}</p>
       </div>
