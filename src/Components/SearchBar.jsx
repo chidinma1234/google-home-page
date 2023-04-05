@@ -14,14 +14,16 @@ export default function SearchBar() {
   };
   return (
     <div className="input">
-      <input
-        type="text"
-        // placeholder="Search google or type a url"
-        className="search_input"
-        onChange={onChangeHandler}
-        onKeyDown={handleKeyPress}
-        value={value}
-      />
+      <form className="form_input">
+        <input
+          type="text"
+          // placeholder="Search google or type a url"
+          className="search_input"
+          onChange={onChangeHandler}
+          onKeyDown={handleKeyPress}
+          value={value}
+        />
+      </form>
       <div className="value">
         <p>{input}</p>
       </div>
